@@ -1,0 +1,132 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #745858;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #fdfdfd;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #ebebeb;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 20px;
+  background-image: url('/frontend/public/img/log.png');
+  background-size: cover;
+  background-position: center;
+  background-color: #ff8181;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #6e0883;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(231, 231, 231, 0.2);
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-container input, .form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
+
+.form-container button {
+  background-color: #646cff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #f1f1f1;
+}
+
+.items-list {
+  margin-top: 20px;
+}
+
+.items-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.items-list li {
+  background-color: #1a1a1a;
+  padding: 10px;
+  border-bottom: 1px solid #2f2f2f;
+}
+
+.items-list li:last-child {
+  border-bottom: none;
+}
+
+.items-list li button {
+  background-color: #ff0000;
+  color: #ff0000;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.items-list li button:hover {
+  background-color: #ff0707;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #a1228c;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  .form-container {
+    background-color: #f9f9f9;
+  }
+  .form-container input, .form-container select {
+    background-color: #ffffff;
+  }
+  .items-list li {
+    background-color: #f9f9f9;
+  }
+}
